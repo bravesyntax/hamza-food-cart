@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hamza Food Cart India — Demo Website (by Bravesyntax)
 
-## Getting Started
+Next.js 15 + Tailwind CSS v4 demo website pitched to Hamza Food Cart India (Agra).
 
-First, run the development server:
+## Run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` — Home: hero, categories, featured products, why us, custom branding, process, gallery, testimonials, FAQ, enquiry form
+- `/products` — Catalogue with category filter + price sort (`?category=kiosk` etc.)
+- `/products/[slug]` — Product detail with price, specs, features, WhatsApp enquiry
+- `/about`, `/contact`
 
-## Learn More
+## Where to edit
 
-To learn more about Next.js, take a look at the following resources:
+- Business info, phone, socials: `src/lib/site.ts`
+- Products, prices, images: `src/data/products.ts`
+- Images: `public/carts/` (cropped from Hamza's Instagram posts for the demo)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Before going live (if the client converts)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Replace demo prices (only Lotus Cafe ₹1,45,000 is real) and sample testimonials
+- Get original high-res photos from the client (some current images are low-res crops)
+- Add real factory address, GSTIN, Google Maps pin, domain + `metadataBase`
+- Optional: admin panel / CMS for products, lead storage, Hindi version
