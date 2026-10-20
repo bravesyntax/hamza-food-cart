@@ -65,7 +65,12 @@ export default function Footer() {
 
       <div className="container-x mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-2 justify-between text-xs text-white/45">
         <p>© {new Date().getFullYear()} Hamza Food Cart India. All rights reserved.</p>
-        <p>Demo website designed & developed by <span className="text-brand font-semibold">Bravesyntax</span></p>
+        <p>
+          Demo website designed & developed by{" "}
+          <a href="https://bravesyntax.com" target="_blank" rel="noopener" className="text-brand font-semibold hover:underline underline-offset-2">
+            Bravesyntax
+          </a>
+        </p>
       </div>
     </footer>
   );
